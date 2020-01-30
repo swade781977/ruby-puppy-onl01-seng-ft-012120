@@ -4,6 +4,8 @@ class Dog
     @name = name
     save
   end
+  def name
+    @name
   def self.all
     @@all
   end
