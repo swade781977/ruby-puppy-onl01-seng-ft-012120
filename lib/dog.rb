@@ -4,7 +4,7 @@ class Dog
     @name = name
     save
   end
-  def self.name
+  def name
     self.name
   end
   def self.all
@@ -12,7 +12,7 @@ class Dog
   end
   def self.print_all
     @@all.each do |object|
-      puts object.name
+      puts "#{object.name}"
     end
   end
   def save
