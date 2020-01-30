@@ -4,9 +4,6 @@ class Dog
     @name = name
     save
   end
-  def name
-   puts "#{self.name}"
-  end
   def self.all
     @@all
   end
