@@ -2,7 +2,7 @@ class Dog
   @@all = []
   def initialize(name)
     @name = name
-    self.save
+    save(self)
   end
   def self.name
     self.name
@@ -15,7 +15,7 @@ class Dog
       puts object.name
     end
   end
-  def self.save
+  def save(self)
     @@all << self
   end
   def self.clear_all
